@@ -17,14 +17,13 @@ const Guns = () => {
     }
 
     let price=0;
-    let names;
         for(const product of card){
             price=price+parseInt(product.price)
         }
         const tex=parseFloat((price*5)/100);
         const grand=price+tex;
     return (
-        <div className='container gun-container'>
+        <div className='container gun-container my-5'>
             <div className="guns">
             {
                 guns.map(gun=><Gun 
@@ -35,17 +34,26 @@ const Guns = () => {
             }
             </div>
             <div className="added-guns ">
-                <h4>Added List</h4>
-                <p>Added Guns:{card.length}</p>
+                <h4>Added Summary</h4>
+                <hr />
                 <p>Total Price:{price}</p>
+                <hr />
                 <p>Tex:{tex.toFixed(2)}</p>
+                <hr />
                 <p>Grand Total:{grand.toFixed(2)}</p>
-                <p>{names}</p>
+                <hr />
+                <p>Adde Gun List:{card.length}</p>
+                <hr />
                 {
                     card.map(gunDetails=><Details 
                         gunDetails={gunDetails}
                     ></Details>)
                 }
+                <hr />
+                <div className="grand">
+                <p>Grand Total</p>
+                <p>{grand.toFixed(2)}</p>
+                </div>
             </div>
         </div>
     );

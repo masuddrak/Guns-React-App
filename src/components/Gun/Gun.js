@@ -1,4 +1,5 @@
 import React from 'react';
+import Popup from '../Popup/Popup';
 import './Gun.css';
 
 const Gun = ({gun,addToCard}) => {
@@ -11,7 +12,12 @@ const Gun = ({gun,addToCard}) => {
                 <h4>{name}</h4>
                 <h6>Price:${price}</h6>
                 <p>Capacity:{capacity}</p>
-                <button className='card-btn' onClick={()=>addToCard(gun)}>Add Card</button>
+               
+                <div className='card-btn'>
+                <button className='card-btns' onClick={()=>addToCard(gun)}>Add Card</button>
+                <Popup gun={gun}></Popup>
+                </div>
+             
             </div>
         </div>
     );
