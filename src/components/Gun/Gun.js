@@ -1,8 +1,8 @@
 import React from 'react';
 import './Gun.css';
 
-const Gun = ({gun}) => {
-    console.log(gun)
+const Gun = ({gun,addToCard}) => {
+    // console.log(gun)
     const {img,price,name,capacity}=gun
     return (
         <div className='gun'>
@@ -11,7 +11,7 @@ const Gun = ({gun}) => {
                 <h4>{name}</h4>
                 <h6>Price:${price}</h6>
                 <p>Capacity:{capacity}</p>
-                <button className='card-btn'>Add Card</button>
+                <button className='card-btn' onClick={()=>addToCard(gun)}>Add Card</button>
             </div>
         </div>
     );
