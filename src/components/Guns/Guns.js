@@ -20,7 +20,7 @@ const Guns = () => {
             }
             </div>
             <div className="added-guns ">
-                <h1>Gun List</h1>
+                <h1>Added Guns List</h1>
             </div>
         </div>
     );
