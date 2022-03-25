@@ -6,7 +6,13 @@ const Gun = ({gun}) => {
     const {img,price,name,capacity}=gun
     return (
         <div className='gun'>
-            <img src={img} alt="" />
+            <div className='gun-info'>
+               <img src={img} alt="" />
+                <h4>{name}</h4>
+                <h6>Price:${price}</h6>
+                <p>Capacity:{capacity}</p>
+                <button className='card-btn'>Add Card</button>
+            </div>
         </div>
     );
 };

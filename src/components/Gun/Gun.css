@@ -1,6 +1,21 @@
 .gun{
-   
+   border: 1px solid rgb(71, 71, 71);
+   border-radius: 10px;
+   box-shadow: 1px 1px 1px 1px  rgb(80, 80, 80);
+   width: 230px;
+   height: 400px;
+   position: relative;
 }
+
 .gun img{
     width: 200px;
+    height: 200px;
+    border-radius: 3px;
+}
+.gun-info{
+    margin: 15px;
+}
+.card-btn{
+    position: absolute;
+    bottom: 10px;
 }
