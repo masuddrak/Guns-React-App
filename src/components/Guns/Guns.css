@@ -18,3 +18,28 @@
     top: 80px;
     margin-left: 1100px;
 }
+
+/* media  */
+@media screen and (max-width: 1400px) {
+    .guns{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .added-guns{
+        margin-left: 900px;
+    }
+  }
+@media screen and (max-width: 1200px) {
+    .added-guns{
+        margin-left: 800px;
+        
+    }
+  }
+@media screen and (max-width: 800px) {
+    .guns{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .added-guns{
+        margin-left: 550px;
+        
+    }
+  }
